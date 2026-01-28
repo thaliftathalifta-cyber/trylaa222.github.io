@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Profile | BloomTech Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #2b1e2f, #3b2a3f);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #f2c1d1;
+    }
+
+    /* ===== COVER ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text span {
+      color: #f2c1d1;
+    }
+
+    .hero-text p {
+      max-width: 550px;
+      margin: auto;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: #f2c1d1;
+      color: #2b1e2f;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #e7a9be;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 25px;
+      border-radius: 18px;
+      backdrop-filter: blur(6px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #f2c1d1;
+    }
+
+    /* ===== PORTFOLIO ===== */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .portfolio-item {
+      background: rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 22px;
+      transition: 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-6px);
+    }
+
+    .portfolio-item h4 {
+      margin-bottom: 10px;
+      color: #f2c1d1;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .rating span {
+      font-size: 22px;
+      color: gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 1. HALAMAN COVER -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Bloom<span>Tech</span> Solution</h1>
+    <p>Perusahaan teknologi kreatif yang bergerak di bidang website, aplikasi, dan solusi digital untuk bisnis modern.</p>
+    <a href="#about" class="btn">Jelajahi Profil</a>
+  </div>
+</section>
+
+<!-- 2. ABOUT US -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-grid">
+    <div class="card">
+      <h3>Visi</h3>
+      <p>Menjadi perusahaan digital terpercaya yang membantu bisnis berkembang melalui teknologi inovatif.</p>
+    </div>
+    <div class="card">
+      <h3>Misi</h3>
+      <p>Menyediakan layanan digital berkualitas, desain modern, serta solusi yang efektif dan efisien.</p>
+    </div>
+    <div class="card">
+      <h3>Struktur Tim</h3>
+      <p>CEO, Web Developer, UI/UX Designer, Digital Marketing, dan Support Team.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PORTFOLIO -->
+<section>
+  <h2>Portofolio & Layanan</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <h4>Website Company Profile</h4>
+      <p>Pembuatan website profesional untuk UMKM dan perusahaan.</p>
+    </div>
+    <div class="portfolio-item">
+      <h4>Aplikasi Kasir</h4>
+      <p>Sistem kasir berbasis web & desktop untuk berbagai jenis usaha.</p>
+    </div>
+    <div class="portfolio-item">
+      <h4>Desain UI/UX</h4>
+      <p>Desain antarmuka modern, rapi, dan nyaman digunakan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CONTACT & REVIEW -->
+<section>
+  <h2>Contact & Review</h2>
+  <div class="contact-grid">
+    <div class="card">
+      <h3>Hubungi Kami</h3>
+      <form>
+        <input type="text" placeholder="Nama">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Pesan"></textarea>
+        <button class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Rating Pelanggan</h3>
+      <div class="rating">
+        <span>★ ★ ★ ★ ★</span>
+      </div>
+      <p>Pelayanan sangat memuaskan, desain rapi dan profesional.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 BloomTech Solution • All Rights Reserved
+</footer>
+
+</body>
+</html>
+ 
